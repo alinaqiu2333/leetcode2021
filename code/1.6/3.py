@@ -8,6 +8,7 @@ class Solution:
         i = 0
         # try to extend the range [i, j]
         for j in range(n):
+            # if the character is in our current mp, then we update the value of i
             if s[j] in mp:
                 i = max(mp[s[j]], i)
 
